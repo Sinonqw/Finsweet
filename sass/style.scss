@@ -482,7 +482,7 @@ html {
   top: 0;
   left: -50%;
   height: 100%;
-  background: url('../images/about/image-1.jpg') 0 0 / 100% no-repeat;
+  background: url('../images/about/image-11.jpg') 0 0 / 100% no-repeat;
   z-index: -1;
 }
 .about-top::after {
@@ -802,14 +802,15 @@ html {
 }
 .question-acc-item span {
   display: block;
-  width: 51px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background-color: $orange;
-  position: relative;
+  position: absolute;
+  left: 80%;
 }
 .question-acc-head span::before { 
   content: "";
-  width: 3px;
+  width: 2px;
   height: 16px;
   background-color: $white;
   position: absolute;
@@ -844,6 +845,7 @@ html {
   font-size: 24px;
   line-height: 150%;
   letter-spacing: -0.03em;
+  // max-width: 84.7%;
 }
 .question-acc-text {
   font-weight: 600;
@@ -1108,7 +1110,8 @@ html {
     right:  15px;
     z-index: 101;
     padding: 15px;
-    background-color: #bee2f7;
+    box-shadow: 0 0 8px 1.4px #bccbeb;
+  background-color: #fff;
     border-radius: 50%;
     // display: flex;
     // align-items: center;
@@ -1239,9 +1242,6 @@ html {
   .form-info-top {
     font-size: 14px;
   }
-  .question-acc-head {
-    font-size: 18px;
-  }
 }
 // -------------------------------------------------------Media 760 start  -------------------------------------
 @media (max-width: 760px) {
@@ -1263,6 +1263,9 @@ html {
   .logos-logo {
     text-align: center;
   }
+  .question-acc-item span {
+    left: 88%;
+  }
 }
 // -------------------------------------------------------Media 614 start  -------------------------------------
 @media (max-width: 614px) {
@@ -1274,6 +1277,9 @@ html {
   }
   .map {
     margin-bottom: 0;
+  }
+    .question-acc-head {
+    font-size: 18px;
   }
 }
 // -------------------------------------------------------Media 550 start  -------------------------------------
@@ -1308,6 +1314,9 @@ html {
   .blog-list {
     grid-template: repeat(4, 1fr) / repeat(1, 1fr);
   } 
+  .question-acc-item span {
+        left: 84%;
+    }
 }
 // -------------------------------------------------------Media 500 start  -------------------------------------
 @media (max-width: 500px) {
@@ -1323,10 +1332,6 @@ html {
     padding-bottom: 40px;
   }
   // ------------------------------------------------------ 
-  .question-acc-item span {
-    width: 45px;
-    height: 36px;
-  }
   // ------------------------------------------------------ 
   .footer-inner {
     flex-direction: column;
@@ -1354,6 +1359,13 @@ html {
   .reviews-slider-btn {
     justify-content: center;
     margin-top: 30px;
+  }
+
+  .question-acc-head span::after {
+    top: 21%;
+  }
+  .question-acc-head {
+    max-width: 94%;
   }
 }
 // -------------------------------------------------------Media 450 start  -------------------------------------
@@ -1436,6 +1448,9 @@ html {
     grid-template: repeat(4, auto) / repeat(1, 1fr);
     gap: 4px;
   }
+      .question-acc-item span {
+        left: 80%;
+    }
 }
 // -------------------------------------------------------Media 350 start  -------------------------------------
 @media (max-width: 350px) {
